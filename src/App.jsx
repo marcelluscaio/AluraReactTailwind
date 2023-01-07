@@ -6,12 +6,13 @@ import Form from './components/Form/Form'
 
 const App = () => {
   const [user, setUser] = useState();
+  const hasUser = Boolean(user);
   
   return(
     <>
-      <Header/>
-      {user && <ArticlesList/>}
-      {user || <Form />}
+      <Header user={user}/>
+      {hasUser && <ArticlesList/>}
+      {hasUser || <Form setUser={setUser} />}
     </>
   )
 }

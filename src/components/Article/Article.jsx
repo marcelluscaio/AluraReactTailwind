@@ -1,4 +1,4 @@
-const Article = ({title, text, tags, image, alt}) => {
+const Article = ({title, text, tags}) => {
    return(
       <article className="p-5 bg-gray-200 dark:bg-dark-200 rounded-xl shadow-md flex flex-col items-center gap-4">
          
