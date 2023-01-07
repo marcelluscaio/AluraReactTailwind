@@ -6,7 +6,7 @@ const Form = ({setUser}) => {
       setUser({name: name, password: password})
    }
 
-   const styles = "pl-5 py-1 border-2 border-alura-100 dark:border-white dark:bg-dark-100 dark:text-white rounded-full outline-none w-full max-w-2xl invalid:focus:border-red-400"
+   const styles = "pl-5 py-1 border-2 border-alura-100 dark:border-white dark:bg-dark-100 dark:text-white rounded-full outline-none w-full max-w-2xl invalid:focus:border-red-400 caret-yellow-400"
    
    return(
       <form className="flex flex-col items-center gap-10 mt-40 mx-20 h-full" onSubmit={safeSubmit}>
